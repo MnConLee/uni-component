@@ -1,0 +1,11 @@
+	   // 右侧按钮点击时触发   uni.reLaunch刷新整个小程序；或者用uni.redirectTo跳转到一个空的页面，再用这个跳回来，就实现了刷新；
+        handleRight(){  
+            // 获取当前也页面  
+            let page = getCurrentPages().pop();  
+            // 利用 redirectTo 重置 当前页面  
+            this.$u.route({  
+                url: page.route, // 获取当前页面路由  
+                type:"redirectTo", // 关闭当前页面，跳转到应用内的某个页面。  
+                params: page.options // 获取当前页面传参  
+            })  
+        },
