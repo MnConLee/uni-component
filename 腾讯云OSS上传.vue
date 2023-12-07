@@ -31,8 +31,8 @@
 <script>
 const COS = require('cos-js-sdk-v5')
 const cos = new COS({
-  SecretId: 'AKIDMXUChxzmLejbEEzVnqfFaibGgsFOIxTl', // 身份识别ID
-  SecretKey: '5yd3FDwRikjV3VkmcFfssfFcrBTo492i' // 身份秘钥
+  SecretId: '', // 身份识别ID
+  SecretKey: '' // 身份秘钥
 })
 export default {
   name: 'detailInofo',
